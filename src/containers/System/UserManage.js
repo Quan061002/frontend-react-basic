@@ -28,7 +28,7 @@ class UserManage extends Component {
         // console.log('get user from node.js:', response)
         if (response && response.errCode === 0) {
             this.setState({
-                errUsers: response.users
+                arrUsers: response.users
             })
         }
     }
@@ -130,7 +130,7 @@ class UserManage extends Component {
                         isOpen={this.state.isOpenModalEditUser}
                         toggleFromParent= {this.toggleUserEditModal}
                         currentUser={this.state.userEdit}
-                        eidtUser={this.doEditUser}
+                        editUser={this.doEditUser}
                     </modalEditUser>
                 }
                 <div className="title text-center">Manage users with quana</div>

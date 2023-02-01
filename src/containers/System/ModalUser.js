@@ -71,6 +71,7 @@ class ModalUser extends Component {
             if (!this.state[arrInput[i]]) {
                 isValid = false;
                 alert('Missing parameter: ' + arrInput[i]);
+                break;
             }
         }
         return isValid;
@@ -91,17 +92,16 @@ class ModalUser extends Component {
             <Modal isOpen={this.props.isOpen}
                    toggle={()=>{ this.toggle() }}
                    className={'modal-user-container'}
-                    size="lg"
+                   size="lg"
                    // centered
             >
                 <ModalHeader toggle={()=>{this.toggle()}}>Create a new user</ModalHeader>
                 <ModalBody>
                     <div className="modal-user-body">
-
                         <div className="input-container">
                             <label>Email</label>
                             <input
-                                type="textl"
+                                type="text"
                                 onChange={(event) => { this.handleOnChangeInput(event, "email") }}
                                 value={this.state.email}
                             />
@@ -119,7 +119,7 @@ class ModalUser extends Component {
                         <div className="input-container">
                             <label>First name</label>
                             <input
-                                type="textl"
+                                type="text"
                                 onChange={(event) => { this.handleOnChangeInput(event, "firstName") }}
                                 value={this.state.firstName}
                             />
@@ -128,7 +128,7 @@ class ModalUser extends Component {
                         <div className="input-container">
                             <label>Last name</label>
                             <input
-                                type="textl"
+                                type="text"
                                 onChange={(event) => { this.handleOnChangeInput(event, "lastName") }}
                                 value={this.state.lastName}
                             />
@@ -137,7 +137,7 @@ class ModalUser extends Component {
                         <div className="input-container max-width-input">
                             <label>Address</label>
                             <input
-                                type="textl"
+                                type="text"
                                 onChange={(event) => { this.handleOnChangeInput(event, "address") }}
                                 value={this.state.address}
                             />
@@ -146,7 +146,7 @@ class ModalUser extends Component {
                         <div className="input-container">
                             <label>Phonenumber</label>
                             <input
-                                type="textl"
+                                type="text"
                                 onChange={(event) => { this.handleOnChangeInput(event, "phonenumber") }}
                                 value={this.state.phonenumber}
                             />
@@ -174,7 +174,7 @@ class ModalUser extends Component {
                     <Button
                         color="primary"
                         className="px-3"
-                        onClick={()=>{this.toggle()}}
+                        onClick={()=>{this.handleAddNewUser() }}
                     >add new</Button>{' '}
                     <Button color="secondary"
                             className="px-3"
