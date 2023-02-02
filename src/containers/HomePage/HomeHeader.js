@@ -18,25 +18,25 @@ class HomeHeader extends Component {
                         </div>
                      <div className="center-content">
                          <div className="child-content">
-                             <div><b> <FormatedMessage id="homeheader.speciality"/></b></div>
-                             <div className="subs-title"><FormatedMessage id="homeheader.searchdoctor"/></div>
+                             <div><b> <FormatedMessage id="home-header.speciality"/></b></div>
+                             <div className="subs-title"><FormatedMessage id="home-header.searchdoctor"/></div>
                          </div>
                          <div className="child-content">
-                             <div><b> <FormatedMessage id="homeheader.health-facility"/></b></div>
-                             <div className="subs-title"><FormatedMessage id="homeheader.select-room"/></div>
+                             <div><b> <FormatedMessage id="home-header.health-facility"/></b></div>
+                             <div className="subs-title"><FormatedMessage id="home-header.select-room"/></div>
                          </div>
                          <div className="child-content">
-                             <div><b> <FormatedMessage id="homeheader.doctor"/></b></div>
-                             <div className="subs-title"><FormatedMessage id="homeheader.select-doctor"/></div>
+                             <div><b> <FormatedMessage id="home-header.doctor"/></b></div>
+                             <div className="subs-title"><FormatedMessage id="home-header.select-doctor"/></div>
                          </div>
                          <div className="child-content">
-                             <div><b> <FormatedMessage id="homeheader.fee"/></b></div>
-                             <div className="subs-title"><FormatedMessage id="homeheader.check-health"/></div>
+                             <div><b> <FormatedMessage id="home-header.fee"/></b></div>
+                             <div className="subs-title"><FormatedMessage id="home-header.check-health"/></div>
                          </div>
                      </div>
                      <div className="right-content">
                          <div className="support"><i className="fas fa-question-circle"></i>
-                            <FormatedMessage id="homeheader.support" />
+                            <FormatedMessage id="home-header.support" />
                          </div>
                          <div className="language-vi">VN</div>
                          <div className="language-rn">EN</div>
