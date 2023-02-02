@@ -120,24 +120,24 @@ class UserManage extends Component {
         //Class được định nghĩa bên trong một class khác, chúng ta gọi nó là nested class
         return (
             <div className="users-container">
-                <modalUser>
+                <modalUser
                     isOpen={this.state.isOpenModalUser}
                     toggleFromParent= {this.toggleUserModal}
                     createNewUser={this.createNewUser}
-                </modalUser>
+                />
                 {this.state.isOpenModalEditUser &&
-                    <modalEditUser>
+                    <modalEditUser
                         isOpen={this.state.isOpenModalEditUser}
                         toggleFromParent= {this.toggleUserEditModal}
                         currentUser={this.state.userEdit}
                         editUser={this.doEditUser}
-                    </modalEditUser>
+                    />
                 }
                 <div className="title text-center">Manage users with quana</div>
                 <div className="mx-1">
                     <button
                         className="btn btn-primary px-3"
-                        onclick={() => this.handleAddNewUser()}
+                        onClick={() => this.handleAddNewUser()}
                     ><i className="fas fa-plus"> </i>Add new user
                     </button>
                 </div>
@@ -148,12 +148,12 @@ class UserManage extends Component {
                             <th scope="col">Email</th>
                             <th scope="col">Firstname</th>
                             <th scope="col">Lastname</th>
-                            <th scope="col">Adress</th>
+                            <th scope="col">Address</th>
                             <th scope="col">Phonenumber</th>
-                            <th scope="col">Gender</th>
-                            <th scope="col">Image</th>
-                            <th scope="col">RoleId</th>
-                            <th scope="col">PositionId</th>
+                            {/*<th scope="col">Gender</th>*/}
+                            {/*<th scope="col">Image</th>*/}
+                            {/*<th scope="col">RoleId</th>*/}
+                            {/*<th scope="col">PositionId</th>*/}
                             <th scope="col">Action</th>
                         </tr>
                         {arrUsers && arrUsers.map((item, index) => {
@@ -164,10 +164,10 @@ class UserManage extends Component {
                                     <td>{item.lastName}</td>
                                     <td>{item.address}</td>
                                     <td>{item.phonenumber}</td>
-                                    <td>{item.gender}</td>
-                                    <td>{item.image}</td>
-                                    <td>{item.roleId}</td>
-                                    <td>{item.positionId}</td>
+                                    {/*<td>{item.gender}</td>*/}
+                                    {/*<td>{item.image}</td>*/}
+                                    {/*<td>{item.roleId}</td>*/}
+                                    {/*<td>{item.positionId}</td>*/}
                                     <td>
                                         <button className="btn-edit" onClick={() => this.handleEditUser(item)}><i
                                             className="fas fa-pencil-alt"></i></button>

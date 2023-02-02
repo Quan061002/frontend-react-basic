@@ -32,4 +32,4 @@ export { handleLoginApi,
     getAllUsers,
     createNewUserService,
     deleteUserService,
-    editUserService };
+    editUserService }

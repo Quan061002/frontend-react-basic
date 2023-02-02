@@ -27,6 +27,7 @@ class ModalUser extends Component {
                 password:'',
                 firstName:'',
                 lastName:'',
+                address:'',
                 phonenumber:'',
             })
         })

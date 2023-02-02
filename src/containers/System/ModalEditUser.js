@@ -55,7 +55,7 @@ class ModalEditUser extends Component {
         });
     }
 
-    checkValideInput = () => {
+    checkValidateInput = () => {
         let isValid = true;
         let arrInput = ['email', 'password', 'firstName', 'lastName', 'address', 'phonenumber'];
         for (let i = 0; i < arrInput.length; i++) {
@@ -68,7 +68,7 @@ class ModalEditUser extends Component {
     }
 
     handleSaveUser = () => {
-        let isValid = this.checkValideInput();
+        let isValid = this.checkValidateInput();
         if(isValid === true) {
             //call api edit user modal
             this.props.editUser(this.state);
