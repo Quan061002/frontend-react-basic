@@ -16,9 +16,9 @@ class About extends Component {
                         <iframe width="100%" height="400px"
                                 src=""
                                 title="Youtube video player"
-                                frameborder="0"
+                                frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pocture;"
-                                allowfullscreen>
+                                allowFullScreen>
 
                         </iframe>
                     </div>
