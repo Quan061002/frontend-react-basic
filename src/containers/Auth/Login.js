@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { push } from "connected-react-router";
 import * as actions from "../../store/actions";
 import './Login.scss';
+import './Btn-login.css';
 import { FormattedMessage } from 'react-intl';
 import { handleLoginApi } from '../../services/userService';
 
@@ -99,7 +100,13 @@ render() {
                             {this.state.errMessage}
                         </div>
                         <div className="col-12">
-                            <button className="btn-login" onClick={() => this.handleLogin()}>Login</button>
+                            <button className="btn-login" onClick={() => this.handleLogin()}>
+                                {/*<div className="text" style="*/}Login
+                                {/*     text-align: center;*/}
+                                {/*     margin-top: -10px;*/}
+                                {/*     ">Login*/}
+                                {/*</div>*/}
+                            </button>
                         </div>
                         <div className="col-12">
                             <span className="forgot-password">Forgot your password?</span>
