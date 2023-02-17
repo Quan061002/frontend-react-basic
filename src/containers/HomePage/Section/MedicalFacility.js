@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import './MedicalFacility.scss';
 import { FormattedMessage } from 'react-intl';
 import Slider from "react-slick";
 
@@ -13,7 +12,7 @@ class MedicalFacility extends Component {
                 <div className="section-container">
                     <div className="section-header">
                         <span className="title-section"> Cơ sở y tế nổi bật</span>
-                        <button className="btn-section"xem thêm></button>
+                        <button className="btn-section">xem thêm</button>
                     </div>
                     <div className="section-body">
                         <Slider {...this.props.settings}>
@@ -21,23 +20,23 @@ class MedicalFacility extends Component {
                                 <div className="bg-image section-medical-facility" />
                                 <div>Hệ thống y tế 1</div>
                             </div>
-                            <div className="MedicalFacility-customize">
+                            <div className="section-customize">
                                 <div className="bg-image section-medical-facility" />
                                 <div>Hệ thống y tế 2</div>
                             </div>
-                            <div className="MedicalFacility-customize">
+                            <div className="section-customize">
                                 <div className="bg-image section-medical-facility" />
                                 <div>Hệ thống y tế 3</div>
                             </div>
-                            <div className="MedicalFacility-customize">
+                            <div className="section-customize">
                                 <div className="bg-image section-medical-facility" />
                                 <div>Hệ thống y tế 4</div>
                             </div>
-                            <div className="MedicalFacility-customize">
+                            <div className="section-customize">
                                 <div className="bg-image section-medical-facility" />
                                 <div>Hệ thống y tế 5</div>
                             </div>
-                            <div className="MedicalFacility-customize">
+                            <div className="section-customize">
                                 <div className="bg-image section-medical-facility" />
                                 <div>Hệ thống y tế 6</div>
                             </div>

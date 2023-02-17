@@ -29,8 +29,8 @@
     #8c53ff 330deg
     );
     -webkit-mask:
-            linear-gradient(#000 0 0) content-box,
-            linear-gradient(#000 0 0);
+            linear-gradient(#282525 0 0) content-box,
+            linear-gradient(#1e0606 0 0);
     -webkit-mask-composite: xor;
     mask-composite: intersect
 }

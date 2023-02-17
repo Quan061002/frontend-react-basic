@@ -8,7 +8,8 @@
         "select-doctor": "Choose a good doctor",
         "fee": "Checkup package",
         "check-health": "General health check",
-        "support": "support"
+        "support": "support",
+        "welcome": "welcome"
     },
     "banner": {
         "title1": "MEDICAL BACKGROUND",
@@ -35,7 +36,7 @@
         "unknown-error": "There was an error",
         "internal-server-error": "Internal server error",
         "bad-request": "Bad request",
-        "forbiden-request": "Invalid input data",
+        "forbidden-request": "Invalid input data",
         "fail-to-load-all-code": "Fail to load data from allcode",
         "sum": "Sum",
         "date-range-invalid": "Date range invalid"
@@ -47,11 +48,25 @@
         "userpass-wrong": "Invalid username or password!"
     },
     "menu": {
+        "admin": {
+            "manage-user": "users system",
+            "manage-doctor": "manage doctors",
+            "manage-admin": "manage admin",
+            "crud": "crud user",
+            "crud-redux": "crud redux",
+            "clinic": "clinic",
+            "manage-clinic": "manage clinics",
+            "specialty": "specialties",
+            "manage-specialty": "manage specialties",
+            "handbook": "handbook",
+            "manage-handbook": "manage handbook"
+        },
         "system": {
             "header": "System",
             "system-administrator": {
                 "header": "System Administrator",
                 "user-manage": "User manage",
+                "user-redux": "Manage user using redux",
                 "product-manage": "Package manage",
                 "register-package-group-or-account": "Register service package for group/account"
             },
@@ -137,5 +152,20 @@
             "remove-assign-fail": "Fail to unassign service package to customer",
             "sure-delete-assign": "Are you sure to unassign service package to customer?"
         }
+
+    },
+    "manage-user": {
+        "add": "add a new user",
+        "email": "email",
+        "password": "password",
+        "firstName": "first name",
+        "lastName": "last name",
+        "phonenumber": "phone number",
+        "address": "address",
+        "position": "position",
+        "role": "role",
+        "image": "avatar",
+        "gender": "gender",
+        "save": "save user"
     }
 }

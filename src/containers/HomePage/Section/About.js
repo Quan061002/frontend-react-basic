@@ -14,16 +14,15 @@ class About extends Component {
                 <div className="section-about-content">
                     <div className="content-left">
                         <iframe width="100%" height="400px"
-                                src=""
-                                title="Youtube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pocture;"
-                                allowFullScreen>
-
+                                src="https://www.youtube.com/embed/iy8PiTVJ3T4"
+                                title="YouTube video player"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
                         </iframe>
                     </div>
                     <div className="content-right">
-
+                        <p> aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                     </div>
                 </div>
             </div>

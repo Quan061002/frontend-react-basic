@@ -47,7 +47,7 @@ class ToastUtil {
             if (error.httpStatusCode === 400) {
                 messageId = 'common.bad-request';
             } else if (error.httpStatusCode === 403) {
-                messageId = 'common.forbiden-request';
+                messageId = 'common.forbidden-request';
             }
         } else {
             // Request fail even server was returned a success response

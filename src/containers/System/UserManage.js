@@ -3,9 +3,9 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import'./UserManage.scss';
 import {getAllUsers, createNewUserService, deleteUserService, editUserService } from '../../services/userService';
-import modalUser from "./ModalUser";
-import modalEditUser from "./ModalEditUser";
-import {emitter} from "../../utils/emitter";
+import {emitter} from '../../utils/emitter';
+import ModalUser from "./ModalUser";
+import ModalEditUser from "./ModalEditUser";
 
 class UserManage extends Component {
 
@@ -21,6 +21,7 @@ class UserManage extends Component {
 
     async componentDidMount() {
         await this.getAllUsersFromReact();
+
     }
 
     getAllUsersFromReact = async () => {
@@ -120,13 +121,13 @@ class UserManage extends Component {
         //Class được định nghĩa bên trong một class khác, chúng ta gọi nó là nested class
         return (
             <div className="users-container">
-                <modalUser
+                <ModalUser
                     isOpen={this.state.isOpenModalUser}
                     toggleFromParent= {this.toggleUserModal}
                     createNewUser={this.createNewUser}
                 />
                 {this.state.isOpenModalEditUser &&
-                    <modalEditUser
+                    <ModalEditUser
                         isOpen={this.state.isOpenModalEditUser}
                         toggleFromParent= {this.toggleUserEditModal}
                         currentUser={this.state.userEdit}

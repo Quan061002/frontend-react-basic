@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import './OutStandingDoctor.scss';
 import { FormattedMessage } from 'react-intl';
 import Slider from "react-slick";
 
@@ -13,7 +12,7 @@ class OutStandingDoctor extends Component {
                 <div className="section-container">
                     <div className="section-header">
                         <span className="title-section">Bác sĩ nổi bật tuần qua</span>
-                        <button className="btn-section"xem thêm></button>
+                        <button className="btn-section">xem thêm</button>
                     </div>
                     <div className="section-body">
                         <Slider {...this.props.settings}>
