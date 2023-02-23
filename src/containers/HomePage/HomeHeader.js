@@ -87,7 +87,7 @@ class HomeHeader extends Component {
                              <div className="text-child"><FormattedMessage id="banner.child3"/></div>
                         </div>
                          <div className="options-child">
-                             <div className="icon-child"><i className="fas fa-microscope"></i> </div>
+                             <div className="icon-child"><i className="fas fa-stethoscope"></i> </div>
                              <div className="text-child"><FormattedMessage id="banner.child4"/></div>
                         </div>
                          <div className="options-child">

@@ -166,6 +166,7 @@
         "role": "role",
         "image": "avatar",
         "gender": "gender",
-        "save": "save user"
+        "save": "save user",
+        "edit": "edit user"
     }
 }

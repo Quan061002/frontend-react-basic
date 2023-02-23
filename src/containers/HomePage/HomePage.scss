@@ -114,7 +114,7 @@
 
         &:hover {
           color: white;;
-          background: #ff9600;
+          background: #1adde5;
         }
       }
     }
@@ -126,7 +126,7 @@
 .section-outstanding-doctor {
   .outer-bg {
     display: flex;
-    justify: center;
+    justify-content: center;
     margin-bottom: 10px;
   }
 
@@ -159,16 +159,16 @@
     font-weight: 600;
   }
 
-  section-about-content {
+  .section-about-content {
     display: flex;
     gap: 15px;
     width: 100%;
 
     .content-left {
-      width: 59%;
+      width: 39%;
     }
     .content-right {
-      width: 39%;
+      width: 59%;
 
       p {
         text-align: justify;
