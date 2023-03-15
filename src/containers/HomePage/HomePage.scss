@@ -33,6 +33,9 @@
   }
 }
 
+.slick-disabled {
+  display: none !important;
+}
 
 .section-share {
   &.section-specialty {
@@ -67,7 +70,7 @@
         }
 
         &.section-outstanding-doctor {
-          background-image: url('../../assets/outstanding-doctor/whut.webp');
+          //background-image: url('../../assets/outstanding-doctor/whut.webp');
           width: 120px;
           height: 120px;
           border-radius: 50%;
@@ -132,6 +135,7 @@
 
   .section-customize {
     padding: 5px;
+    cursor: pointer;
 
     .customize-border {
       border: 1px solid #ff9600;
@@ -169,7 +173,8 @@
     }
     .content-right {
       width: 59%;
-
+      max-height: 430px;
+      overflow: auto;
       p {
         text-align: justify;
         font-style: italic;

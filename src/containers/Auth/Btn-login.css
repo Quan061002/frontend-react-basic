@@ -28,6 +28,7 @@
     #0000 210deg 300deg,
     #8c53ff 330deg
     );
+    -webkit-mask:
             linear-gradient(#ea0202 0 0) content-box,
             linear-gradient(#e5d9d9 0 0);
 
