@@ -20,7 +20,8 @@ class ManageSchedule extends Component {
             listDoctors: [],
             selectedDoctors: [],
             currentDate: '',
-            rangeTime: []
+            rangeTime: [],
+            minDate: moment().subtract(1, 'days')
         }
     }
 
@@ -133,14 +134,22 @@ class ManageSchedule extends Component {
             doctorId: selectedDoctor.value,
             formatedDate: formatedDate
         })
-        console.lod('quana check res:saveBulkScheduleDoctor', res)
 
+        if(res && res.errCode === 0) {
+            toast.success("Save infor succeed!");
+
+        } else {
+            toast.error("error saveBulkScheduleDoctor");
+        console.lod('quana check res:saveBulkScheduleDoctor', res)
+        }
         console.log('Quana check result: ', result)
     }
     render() {
         console.log('quana check state: ', this.state)
         let { rangeTime } = this.state;
         let { language } = this.props;
+        let yesterday = new Date(new Date().setDate(new Date().getDate() - 1));
+
         return (
             <div className="manage-schedule-container">
                 <div className="m-s-title">
@@ -162,7 +171,7 @@ class ManageSchedule extends Component {
                                 onChange={this.handleOnChangeDatePicker}
                                 className="form-control"
                                 value={this.state.currentDate}
-                                minDate={new Date()}
+                                minDate={yesterday}
                             />
                         </div>
                         <div className="col-12 pick-hour-container">
