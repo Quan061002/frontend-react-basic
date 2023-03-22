@@ -7,6 +7,7 @@ import {
 import { toast } from "react-toastify"
 import { ROW_SELECT_DISABLED } from 'react-bootstrap-table-next';
 import {routerActions} from "connected-react-router";
+import { get } from "lodash";
 // export const fetchGenderStart = () => ({
 //     type: actionTypes.FETCH_GENDER_START
 // })
@@ -301,3 +302,41 @@ export const fetchAllScheduleTime = () => {
         }
     }
 }
+
+export const getAllRequiredDoctorInfor = () => {
+    return async (dispatch, getState) => {
+        try {
+            dispatch({ type: actionTypes.FETCH_REQUIRED_DOCTOR_INFOR_START })
+
+            let resPrice = await getAllCodeService("PRICE");
+            let resPayment = await getAllCodeService("PAYMENT");
+            let resProvince = await getAllCodeService("PROVICE");
+
+            if (resPrice && resPrice.errCode === 0
+                && resPayment && resPayment.errCode === 0
+                && resProvince && resProvince.errCode === 0) {
+                    let data = {
+                        resPrice: resPrice.data,
+                        resPayment: resPayment.data,
+                        resProvince: resProvince.data
+                    }
+                    dispatch(fetchRequiredDoctorInforSuccess(data))
+                }else {
+                    dispatch(fetchRequiredDoctorInforFailed());
+                }
+        }catch(e) {
+            dispatch(fetchRequiredDoctorInforFailed());
+            console.log('fetchGenderStart error', e)
+        }
+
+    }
+}
+
+export const fetchRequiredDoctorInforSuccess = (allReuiredData) => ({
+    type: actionTypes.FETCH_REQUIRED_DOCTOR_INFOR_SUCCESS,
+    data: allReuiredData
+})
+
+export const fetchRequiredDoctorInforFailed =() => ({
+    type: actionTypes.FETCH_REQUIRED_DOCTOR_INFOR_FAILDED
+})
