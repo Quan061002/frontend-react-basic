@@ -9,7 +9,7 @@ import './ManageDoctor.scss';
 import Select from 'react-select';
 import {CRUD_ACTIONS, LANGUAGES} from "../../../utils";
 import { getDetailInforDoctor } from "../../../services/userService";
-
+import { getAllRequiredDoctorInfor } from '../../../store/actions';
 
 const mdParser = new MarkdownIt();
 

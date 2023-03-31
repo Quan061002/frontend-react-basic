@@ -326,7 +326,7 @@ export const getAllRequiredDoctorInfor = () => {
                 }
         }catch(e) {
             dispatch(fetchRequiredDoctorInforFailed());
-            console.log('fetchGenderStart error', e)
+            console.log('fetchRequiredDoctorInfor error', e)
         }
 
     }

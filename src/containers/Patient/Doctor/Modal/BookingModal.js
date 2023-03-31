@@ -3,6 +3,8 @@ import { FormattedMessage } from "react-intl";
 import { connect } from "react-redux";
 import './BookingModal.scss';
 import { Modal } from "bootstrap";
+import ProfileDoctor from '../ProfileDoctor';
+import _ from 'lodash';
 
 class BookingModal extends Component {
 
@@ -25,6 +27,11 @@ class BookingModal extends Component {
 
     render() {
         let { isOPenModal, closeBookingClose, dataTime } = this.props;
+        let doctorId = '';
+        if(dataTime && !_.isEmpty(dataTime)) {
+            doctorId = dataTime.doctorId
+        }
+
         return (
             <Modal
             isOpen = {isOPenModal}
@@ -41,13 +48,12 @@ class BookingModal extends Component {
                         ><i className="fas fa-times"></i></span>
                     </div>
                     <div className="booking-modal-body">
-                        {}
                         <div className="doctor-infor">
+                            <ProfileDoctor
+                                doctorId={doctorId}
+                            />    
+                        </div>
 
-                        </div>
-                        <div className="price">
-                            gia kham 500.000vnd
-                        </div>
                         <div className="row">
                             <div className="col-6 form-group">
                                 <label>ho ten</label>
